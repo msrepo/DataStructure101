@@ -155,7 +155,7 @@ void postfix(char *infix, char *postfix) {
 	while (!empty(&operatorstack)) {
 		postfix[outposition++] = pop(&operatorstack);
 	}
-	postfix[--outposition] = '\0';
+	postfix[outposition] = '\0';
 	printf("Postfix Expression:%s\n", postfix);
 
 }
